@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="小姐牌">
+        <meta name="viewport" content="width=device-width">
+        <title> 小姐牌 | 在线 </title>
+
+        <!-- css style  -->
+        <link href="style.css" rel="stylesheet">
+
+        <!-- js functions  -->
+        <script src="app.js"></script>
+    </head>
+
+    <body>
+        <div class="app-wrap">
+            <div class="app">
+                <!-- top control  -->
+                <div class="top-control">
+                    <a href="#info">游戏说明</a>
+                </div>
+                <!-- card  -->
+                <div class="stack-wrapper">
+                    <div id="cardStack">
+                        <div  id="data-card">
+                            <div class="face-one">
+                                <span id="number">A</span>
+                                <span id="suit">♣</span>
+                            </div>
+                            <div class="card-action">
+                                <div data-headline>指定人喝酒</div>
+                                <div data-action>选一个在场你最讨厌/喜欢的人喝酒</div>
+                            </div>
+                            <div class="face-two">
+                                <span id="number">A</span>
+                                <span id="suit">♣</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- next card button  -->
+                <div id="nextCard" onclick="newNumber()">
+                     下一张牌
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+
+</html>

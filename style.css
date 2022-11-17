@@ -1,0 +1,221 @@
+:root {
+    --w: 100vw;
+    --h: 100vh;
+    --font: sofia-pro-soft,-apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+html {
+    background-image: linear-gradient(-180deg,#ff80ac 29%,#ffb8c4 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    position: relative;
+    touch-action: manipulation;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+}
+body {
+    display: block;
+    margin: 8px;
+}
+
+div {
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+div {
+    display: block;
+}
+
+
+
+.app-wrap {
+    height: var(--h);
+    min-height: var(--h);
+    max-height: var(--h);
+    width: var(--w);
+    min-width: var(--w);
+    max-width: var(--w);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+.app {
+    height: calc(var(--h) - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* top control  */
+.top-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(var(--w) - 32px);
+    padding: 16px 0;
+}
+
+.top-control a {
+    height: 34px;
+    width: 120px;
+    border-radius: 999px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    font-size: 20px;
+    background: rgb(0, 0, 0);
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+}
+
+
+/* start UI  */
+.welcome-headline {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.welcome-text {
+    font-size: 20px;
+    line-height: 1.2em;
+    width: calc(100vw - 32px);
+    max-width: 300px;
+    color: #502e00;
+}
+
+#startUI {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    transform: scale(1);
+    transition: .5s ease-in-out all;
+    opacity: 1;
+    height: calc(var(--h) - 100px - 98px - 66px);
+}
+
+
+
+/* card stack  */
+.stack-wrapper {
+    width: calc(100vw - 96px);
+    height: calc(var(--h) - 100px - 98px - 66px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#cardStack {
+    width: calc(100vw - 96px);
+    height: calc(var(--h) - 100px - 98px - 66px);
+    max-height: 540px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cardStack, #nextCard {
+    cursor: pointer;
+}
+
+#data-card{
+    max-height: 500px;
+}
+
+#data-card {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    position: absolute;
+    margin-bottom: 48px;
+    background: rgb(244, 244, 244);
+    border-radius: 21px;
+    transition: ease all .4s;
+    opacity: 1;
+    box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.7);
+    max-width: 360px;
+    max-height: 500px;
+    width: calc(100vw - 96px);
+    height: calc(130vw - 96px);
+    z-index: 5;
+}
+
+#nextCard {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 700;
+    padding: 0 48px;
+    font-size: 22px;
+    color: #fff;
+    background: #ec3814;
+    box-shadow: 0 8px 16px -4px rgb(212 0 43 / 50%);
+    border-radius: 999px;
+    margin: 24px auto;
+    transition: all ease .25s;
+    transform: scale(1);
+}
+
+
+/* card face  */
+.face-one, .face-two {
+    font-size: 24px;
+    font-weight: 700;
+    display: inline-flex;
+    flex-direction: column;
+    line-height: .9em;
+    position: absolute;
+}
+
+.face-one {
+    top: 16px;
+    left: 16px;
+}
+
+.face-two {
+    bottom: 16px;
+    right: 16px;
+    transform: rotate(180deg);
+}
+
+#card-action {
+    max-width: calc(100% - 32px);
+    padding: 0 0 12px;
+}
+
+[data-headline] {
+    font-size: 25px;
+    font-weight: 700;
+    padding: 0 0 8px;
+    line-height: 1.2em;
+}
+
+[data-action] {
+    color: #5d5c69;
+    font-size: 18px;
+    line-height: 1.2em;
+}
