@@ -11,24 +11,41 @@
         <link href="style.css" rel="stylesheet">
 
         <!-- js functions  -->
-        <script defer src="view.js" data-pcgd></script>
+        <script src="app.js"></script>
     </head>
 
     <body>
         <div class="app-wrap">
             <div class="app">
                 <div class="top-control">
-                    <a href="#info">游戏说明</a>
+                    <a href="#instruction">游戏说明</a>
                 </div>
                 <div id="startUI" class="started">
                     <div class="welcome-headline">来玩小姐牌吧～</div>
                     <div class="welcome-text">
-                        欢迎来到楷森制作的小姐牌服务器，性感荷官在线为你发牌～
+                        欢迎来到Kaikaiye制作的小姐牌服务器，性感荷官在线为你发牌～
                     </div>
                 </div>
                 <div id="nextCard">
-                    <a href="card.html">开始游戏</a>
+                    <a href="card.html">
+                        <button class="custom-btn btn-15" onclick="newNumber();newSuit();">开始抽牌</button>
+                    </a>
                 </div>
+            </div>
+        </div>
+        
+        <div id="instruction">
+            <div class="game-instruction">
+                <h2>小姐牌</h2>
+                <p>在这里，你可以在网上玩经典的纸牌饮酒游戏，而且不需要一副纸牌。</p>
+                <h3>你需要准备的东西：</h3>
+                <ul>
+                    <li>几个好朋友（陌生人更好哈哈）</li>
+                    <li>一桌子的酒（野格就算了）</li>
+                </ul>
+                <h3>游戏规则：</h3>
+                <p><strong>游戏人数：</strong>4 - 12 个人</p>
+                <p>一副扑克取出大小王牌，将牌打乱顺序放好，从第一个人开始抽取，按照顺序依次抽取， 每张牌代表不同的意思。</p>
             </div>
         </div>
 

@@ -5,7 +5,7 @@
 }
 
 html {
-    background-image: linear-gradient(-180deg,#ff80ac 29%,#ffb8c4 100%);
+    background-image: linear-gradient(-180deg,#ffa6a6 29%,#ff6e86 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     scroll-behavior: smooth;
@@ -35,8 +35,32 @@ div {
     display: block;
 }
 
+h1, h2, p {
+    -webkit-margin-before: 0;
+    margin-block-start: 0;
+    -webkit-margin-after: 0;
+    margin-block-end: 0;
+    padding-bottom: 12px;
+}
+
+h2 {
+    margin-top: 0.5em;
+    font-size: 1.8em;
+}
+
+h3 {
+    padding-top: 12px;
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
 
 
+
+/* app wrap  */
 .app-wrap {
     height: var(--h);
     min-height: var(--h);
@@ -98,7 +122,7 @@ a {
     line-height: 1.2em;
     width: calc(100vw - 32px);
     max-width: 300px;
-    color: #502e00;
+    color: #140c00;
 }
 
 #startUI {
@@ -154,7 +178,7 @@ a {
     border-radius: 21px;
     transition: ease all .4s;
     opacity: 1;
-    box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.7);
+    box-shadow: 5px 5px 30px -5px rgba(164, 10, 84, 0.7);
     max-width: 360px;
     max-height: 500px;
     width: calc(100vw - 96px);
@@ -166,15 +190,7 @@ a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
-    line-height: 50px;
-    font-weight: 700;
     padding: 0 48px;
-    font-size: 22px;
-    color: #fff;
-    background: #ec3814;
-    box-shadow: 0 8px 16px -4px rgb(212 0 43 / 50%);
-    border-radius: 999px;
     margin: 24px auto;
     transition: all ease .25s;
     transform: scale(1);
@@ -183,7 +199,7 @@ a {
 
 /* card face  */
 .face-one, .face-two {
-    font-size: 24px;
+    font-size: 35px;
     font-weight: 700;
     display: inline-flex;
     flex-direction: column;
@@ -218,4 +234,81 @@ a {
     color: #5d5c69;
     font-size: 18px;
     line-height: 1.2em;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+/* button */
+.custom-btn {
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-family: var(--font);
+    font-size: large;
+    font-weight: bold;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease .25s;
+    transform: scale(1);
+}
+
+.btn-15 {
+    background: #e90000;
+    border: none;
+    z-index: 1;
+}
+.btn-15:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #c50515;
+    border-radius: 30px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(255, 255, 255, 0.1),
+    4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btn-15:hover {
+color: #fff;
+}
+.btn-15:hover:after {
+left: 0;
+width: 100%;
+}
+.btn-15:active {
+top: 2px;
+}
+
+
+/* instruction */
+#instruction {
+    max-width: 640px;
+    padding: 32px 12px 140px;
+    margin: 0 auto;
+}
+
+.game-instruction {
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 30px;
+    box-shadow: 0 16px 32px -10px rgba(197, 14, 44, 0.7);
 }
