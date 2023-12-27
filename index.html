@@ -11,44 +11,61 @@
         <link href="style.css" rel="stylesheet">
 
         <!-- js functions  -->
-        <script src="app.js"></script>
+        <script src=""></script>
     </head>
 
     <body>
-        <div class="app-wrap">
-            <div class="app">
-                <div class="top-control">
-                    <a href="#instruction">游戏说明</a>
-                </div>
-                <div id="startUI" class="started">
-                    <div class="welcome-headline">来玩小姐牌吧～</div>
-                    <div class="welcome-text">
-                        欢迎来到Kaikaiye制作的小姐牌服务器，性感荷官在线为你发牌～
-                    </div>
-                </div>
-                <div id="nextCard">
-                    <a href="card.html">
-                        <button class="custom-btn btn-15" onclick="newNumber();newSuit();">开始抽牌</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-        <div id="instruction">
-            <div class="game-instruction">
-                <h2>小姐牌</h2>
-                <p>在这里，你可以在网上玩经典的纸牌饮酒游戏，而且不需要一副纸牌。</p>
-                <h3>你需要准备的东西：</h3>
-                <ul>
-                    <li>几个好朋友（陌生人更好哈哈）</li>
-                    <li>一桌子的酒（野格就算了）</li>
-                </ul>
-                <h3>游戏规则：</h3>
-                <p><strong>游戏人数：</strong>4 - 12 个人</p>
-                <p>一副扑克取出大小王牌，将牌打乱顺序放好，从第一个人开始抽取，按照顺序依次抽取， 每张牌代表不同的意思。</p>
-            </div>
-        </div>
+         <!-- Navigation Bar -->
+         <nav class="navigation navigation--inline">
+            <ul>
+              <li>
+                <a href="#">
+                  <span class="">主页/其他游戏</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="">关于作者</span>
+                </a>
+              </li>
+            </ul>
+        </nav>
 
+        <!-- main -->
+        <main>
+            <section class="hero-section">
+                <div class="card-grid">
+                  <a class="card" href="kingsCupGame/index.html">
+                    <div class="card__background" style="background-image: url(assets/kings_cup.png)"></div>
+                    <div class="card__content">
+                      <h3 class="card__heading">小姐牌</h3>
+                      <p class="card__category">Category</p>
+                    </div>
+                  </a>
+                  <a class="card" href="#">
+                    <div class="card__background" style="background-image: url(assets/poker.jpg)"></div>
+                    <div class="card__content">
+                      <h3 class="card__heading">猜大小</h3>
+                      <p class="card__category">Category</p>
+                    </div>
+                  </a>
+                  <a class="card" href="#">
+                    <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1556680262-9990363a3e6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+                    <div class="card__content">
+                      <h3 class="card__heading">谁是卧底</h3>
+                      <p class="card__category">Category</p>
+                    </div>
+                  </li>
+                  <a class="card" href="#">
+                    <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557004396-66e4174d7bf6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+                    <div class="card__content">
+                      <h3 class="card__heading">我最想和谁..</h3>
+                      <p class="card__category">Category</p>
+                    </div>
+                  </a>
+                <div>
+            </section>
+        </main>
     </body>
 
 

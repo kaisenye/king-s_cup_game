@@ -1,1 +1,1 @@
-# king-s_cup_game
+# 聚会玩
